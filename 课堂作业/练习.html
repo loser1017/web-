@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>河南牧业经济学院</title>
+    <style type="text/css">
+        /* weight:400和normal一样不加粗， */
+        /* #fot {font-family:"宋体";font-size:28px;font-weight:400;font-style:italic;} */
+        /* 字体复合属性{font：font-style font-weight font-size/line-height font-family}顺序不能换，各个属性之间用空格隔开，size和family不能省略 */
+        #fot {font: 28px "宋体";}
+    </style>
+</head>
+<body>
+    <h1 id="front">首页</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <h4><a href="#one">个人简介</a></h4>
+    <p>ChatGPT 这波浪潮来势汹汹，很多人始料未及，奉着一步迟步步迟的思想，<br />众多科技公司前仆后继地搭上了
+        这班车，但是如此匆忙下，上赶着为了发布<br />新品而发布，即使强大如 Google，其内部员工也终是看不下去了。</p>
+    <p>据 CNBC 报道，在 Google 内部论坛 Memegen 上，获得高赞的一条评论如是写道，“亲爱的桑达尔，Bard 
+        的推出和裁员是仓促的、拙劣的和短视的。请回到采取长期的战略中”，该条帖子还配有一张皮查伊的严肃照片。
+        版权声明：本文为CSDN博主「CSDN资讯」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+        <br />原文链接：https://blog.csdn.net/csdnnews/article/details/129019668
+    </p>
+    <strong> 加粗标签</strong>
+    <b></b>
+    <em>倾斜标签</em>
+    <i>倾斜标签</i>
+    <del>删除线标签</del>
+    <s>删除线标签</s>
+    <ins>下划线标签</ins>
+    <u>下划线标签</u>
+    <div>盒子占一行</div>
+    <div>盒子占一行</div>
+    <span>百度</span>
+    <span>必应</span>
+    <span>搜狗</span>
+    <h4>图像标签的使用：</h4>
+    <img src="../images/大三下学期课程表.jpg" />
+    <h4>alt 图像显示不出来用文本替换表示</h4>
+    <img src="../images/大三下学期课程表.jpg" alt="大三下学期课程表" />
+    <h4>title 提示文本，鼠标放在图片上显示文字</h4>
+    <img src="../images/大三下学期课程表.jpg"  alt="大三下学期课程表" title="大三下学期课程表"/>
+    <h4>width 图像宽度 height 图像高度 border 图像边框宽度</h4>
+    <img src="../images/大三下学期课程表.jpg" alt="大三下学期课程表" title="大三下学期课程表" width="200" border="3">
+    <div><img src="C:\Users\28201\Desktop\web前端\images\123.jpg" width="800"></div>
+    <div><img src="https://img-home.csdnimg.cn/images/20230213094345.jpg" width="800"></div>
+    <h4>外部链接 _self当前窗口打开 _blank 新建窗口打开</h4>
+    <a href="https://www.bilibili.com/" target="_blank"> 哔哩哔哩</a>
+    <h4>内部连接</h4>
+    <h5 id="one">个人简介</h5>
+    <p>习近平，男，汉族，1953年6月生，陕西富平人，1969年1月参加工作，<br />1974年1月加入中国共产党，清华大学人文社会学院马克思主义理论与思想政治教育专业毕业，在职研究生学历，法学博士学位。</p>
+    <h5><a href="#front">返回首页</a></h5>
+    <!-- 注释标签Ctrl+/ -->
+    <!-- 表格tr表示行，td表示行内容table data cell -->
+    <!-- 表头单元格内容用th表示，加粗居中 -->
+     <!-- 跨行合并：<td rowspan="单元格个数"></td>；跨列合并：<td colspan="单元格个数"></td> -->
+    <table border="1" cellspacing="0" width="300">
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td>张三</td>
+            <td>男</td>
+            <td><a href="https://cn.bing.com/">必应</a></td>
+        </tr>
+        <tr align="center">
+            <td>李四</td>
+            <td>男</td>
+            <td>34</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <h4>无序列表</h4>
+    <ul>
+        <li>中国</li>
+        <li>美国</li>
+        <li>俄罗斯</li> 
+    </ul>
+
+
+    <h4>有序列表</h4>
+    <ol>
+        <li>中国</li>
+        <li>美国</li>
+        <li>俄罗斯</li> 
+    </ol>
+
+
+    <h4>自定义列表</h4>
+    <dl>
+        <dt>国家</dt>
+        <dd>中国</dd>
+        <dd>俄罗斯</dd>
+    </dl>
+    <hr>
+
+<!-- 默认首次选中checked -->
+    <h4>表单标签</h4>
+    <form>
+        账号：<input type="text" name="username" value="请输入用户名"> <br />
+        密码：<input type="password" name="pwd"> <br />
+        <!-- 单选 -->
+        性别: 男<input type="radio" name="sex" checked="checked">女<input type="radio" name="sex"> <br />
+        <!-- 复选 -->
+        爱好: 吃饭<input type="checkbox" name="hobby"> 睡觉<input type="checkbox" name="hobby">
+    </form>
+    <p id="fot">中华人民共和国</p>
+
+</body>
+</html>

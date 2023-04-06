@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 三大特性：层叠性、继承性、优先级 */
+        body{
+            /* font:12px/24px "宋体" */
+            /* 24px为行高 */
+            font:12px/1.5 "宋体"
+            /* 1.5表示子标签行高为字体大小的1.5倍  在body中设置行高number值，便于子标签根据字体大小自动调整行高*/
+
+        }
+        div{color:red;font-size:28px;}
+        div{color:blue}
+        /* 层叠性  就近原则 只覆盖冲突的部分*/
+        p{font-size :20px;}
+    </style>
+</head>
+<body>
+    <div>
+        <p>同志们辛苦了</p>
+        <p>同志们辛苦了</p>
+        <!-- 继承性 p继承了父标签的蓝色 可以继承的（text-、font-、line-、color等）-->
+    </div>
+   
+</body>
+</html>

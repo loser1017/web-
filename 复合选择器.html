@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 元素1 元素2 {} */ 
+        ol li {color:blue;font-size: 28px;}
+        ol li span{color:red;}
+        .one li {color:yellow;}
+        /* 子选择器 元素1>元素2{} */
+        p>span {color:aqua;}
+        /* 并集选择器 元素1，元素2{} 任何选择器都可以作为并集选择器的一部分*/
+        h1,
+        h2,
+        .two li{color:darkorchid;}
+        /* 伪类选择器用：表示  比如:hover 
+        链接伪类选择器：
+        a:link 选择所有未被访问的链接
+        a:visited  选择所有已被访问的链接
+        a:hover 选择鼠标指针位于其上的链接
+        a:active 选择活动链接（鼠标按下未弹起的链接
+        顺序按lvha来写*/
+        a:link{color:purple;text-decoration: none;}
+        a:visited{color:orange;}
+        a:hover{color:skyblue}
+        a:active{color:green}
+        /* 焦点选择器:focus 选区获得焦点的【表单元素】*/
+        input:focus{background-color:lemonchiffon;color:aqua}
+
+    </style>
+</head>
+<body>
+    <!-- 快速生成 ol>li*4{nihao} -->
+    <ol>
+        <li>nihao</li>
+        <li>nihao</li>
+        <li>nihao</li>
+        <li><span>nihao</span></li>
+    </ol>
+    <ol class="one">
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+    </ol>
+
+
+    <p>
+        <span>儿子</span>
+        <div>
+            <span>孙子</span>
+        </div>
+    </p>
+
+
+
+    <h1>你好</h1>
+    <h2>我不好</h2>
+    <ul class="two">
+        <li>测试</li>
+        <li>测试</li>
+        <li>测试</li>
+    </ul>
+
+
+    <a href="#">小组同学讨论</a>
+    <br>
+
+    <input type="text">
+    <input type="text">
+
+</body>
+</html>

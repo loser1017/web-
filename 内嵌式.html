@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+            /* * {color:red;} */
+        /* 标签选择器 */
+        p {color:red;font-size: 19px;}
+        /* 类选择器  样式点定义，结构类class定义 开发最常用*/
+        .box{width: 100px;height: 100px;font-size: 25px;}
+        .color {color: green;}
+        .red {background-color: red;}
+        .green {background-color:green;}
+        /* id选择器，#加名字，结构中用id="名字"只能调用一次 */
+        #font34 {font-size: 34px;}
+        /* 通配符选择器，用*，表示，不需要调用，样式应用到所有标签中 */
+    
+    </style>
+</head>
+<body>
+    <p>中华人民共和国</p>
+    <ul>
+        <!-- 类选择器使用  标签可以添加多个类名，用空格隔开 -->
+        <li class="color">上海</li>
+        <li class="color">北京</li>
+    </ul>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <p class="color box">中国教育考试网</p>
+    <p id="font34">中国教育考试网</p>
+</body>
+</html>

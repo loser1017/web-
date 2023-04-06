@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            width: 1000px;
+            height: 500px;
+            background-color: pink;
+            background-repeat: no-repeat;
+            background-image: url(images/Snipaste_2023-04-01_21-18-45.png);
+            /* X轴和Y轴不能颠倒
+            如果写一个值，另一个默认垂直居中 */
+            /* background-position: 950px 100px; */
+            /* 混合单位，第一个X轴，第二个Y轴 */
+            background-position:center 20px;
+        }
+        /* 背景色半透明 */
+        #d2 {
+            width: 300px;
+            height: 300px;
+            /* a为透明度取值在0~1之间 ;可以省略0*/
+            background: rgba(125, 200,70, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+</body>
+
+</html>

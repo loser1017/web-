@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{color:blue} /*权重0001*/
+        ul li {color:green}/*权重0001+0001=0002*/
+        .nav li {color:aqua}/*权重0011*/
+    </style>
+</head>
+<body>
+    <!-- 复合选择器权重叠加 不会进位 -->
+    <ul class="nav">
+        <li>北京</li>
+        <li>北京</li>
+        <li>北京</li>
+    </ul>
+</body>
+</html>

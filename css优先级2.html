@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father {color:red}
+        p{color:blue}
+        body{color:aqua}
+        /* 浏览器默认给a一个color:blue,无下划线样式 */
+        a{color:green}
+    </style>
+</head>
+<body>
+    <div id="father">
+        <!-- 继承的权重为0 -->
+        <p>中华人民共和国</p>
+        <a href="#">单独样式</a>
+    </div>
+</body>
+</html>
